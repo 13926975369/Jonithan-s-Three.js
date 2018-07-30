@@ -47,9 +47,9 @@ window.onload = function () {
             particleAnimate = createParticleAnimateFunction(
                 {   originParticle:originParticlae,
                     destiParticale:pointsFiled,
-                    speedX:10000,
-                    speedY:10000,
-                    speedZ:10000
+                    speedX:20000,
+                    speedY:20000,
+                    speedZ:20000
                 });
             // threeConf.scene.add(pointsFiled);
             threeConf.scene.add(originParticlae);
