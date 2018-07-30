@@ -4,7 +4,7 @@ window.onload = function () {
         lightY:100,
         lightZ:100,
         cameraX:0,
-        cameraY:0,
+        cameraY:800,
         cameraZ:2500
     });//基础配置
     let fontLoader = new THREE.FontLoader();
@@ -40,7 +40,7 @@ window.onload = function () {
             pointsFiled.position.x = -2500;
             console.log(pointsFiled);
             originParticlae = createOriginParticleField_samePosition({originParticleNum:geo_ver.length,verPosition:[-100,-1000,0]});
-            originParticlae.position.z = -3800;
+            originParticlae.position.z = -4000;
             originParticlae.position.x = -2500;
             originParticlae.position.y = -200;
             console.log(originParticlae);
