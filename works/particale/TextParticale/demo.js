@@ -40,7 +40,7 @@ window.onload = function () {
             pointsFiled.position.x = -2500;
             console.log(pointsFiled);
             originParticlae = createOriginParticleField_samePosition({originParticleNum:geo_ver.length,verPosition:[-100,-1000,0]});
-            originParticlae.position.z = -2800;
+            originParticlae.position.z = -3500;
             originParticlae.position.x = -2500;
             originParticlae.position.y = -200;
             console.log(originParticlae);
@@ -56,7 +56,7 @@ window.onload = function () {
             animate();
         });
     function animate() {
-        threeConf.stats.begin();//更新啦
+        threeConf.stats.begin();
         threeConf.renderer.clear();
         threeConf.renderer.render(threeConf.scene,threeConf.camera);
         threeConf.control.update();
