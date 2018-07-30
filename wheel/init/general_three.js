@@ -47,7 +47,7 @@ function initThree({
     threeConf.camera.add(threeConf.light);
 
     //控制器
-    threeConf.control = new THREE.OrbitControls(threeConf.camera);
+    // threeConf.control = new THREE.OrbitControls(threeConf.camera);
 
     //监视器
     threeConf.stats = new Stats();
