@@ -1,4 +1,5 @@
 // import {Stats} from 'Stats.js';//moudule需要开启平台功能，略显鸡肋，所以把stats的代码直接copy到下方
+console.log(Stats);
 function initThree({
     canvasID = 'three_canvas',
     cameraNear = 1,

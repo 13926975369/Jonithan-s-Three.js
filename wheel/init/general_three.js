@@ -49,6 +49,13 @@ function initThree({
     //控制器
     threeConf.control = new THREE.OrbitControls(threeConf.camera);
 
+    //监视器
+    threeConf.stats = new Stats();
+    threeConf.stats.domElement.style.position = "absolute";
+    threeConf.stats.domElement.style.left = "0px";
+    threeConf.stats.domElement.style.top = "0px";
+    document.getElementById(canvasID).appendChild(threeConf.stats.dom);//stats.begin() stats.end();
+
     console.log("记得写渲染函数");
     return threeConf;
 }
