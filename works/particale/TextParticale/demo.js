@@ -59,7 +59,7 @@ window.onload = function () {
         threeConf.stats.begin();
         threeConf.renderer.clear();
         threeConf.renderer.render(threeConf.scene,threeConf.camera);
-        threeConf.control.update();
+        // threeConf.control.update();
         particleAnimate();
         threeConf.stats.end();
         requestAnimationFrame(animate);
