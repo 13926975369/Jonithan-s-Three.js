@@ -40,7 +40,7 @@ window.onload = function () {
             pointsFiled.position.x = -2500;
             console.log(pointsFiled);
             originParticlae = createOriginParticleField_samePosition({originParticleNum:geo_ver.length,verPosition:[-100,-1000,0]});
-            originParticlae.position.z = -2000;
+            originParticlae.position.z = -2500;
             originParticlae.position.x = -2500;
             originParticlae.position.y = -200;
             console.log(originParticlae);
