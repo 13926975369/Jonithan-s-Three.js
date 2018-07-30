@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f78784d-dd47-437a-a577-8119c9612942" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/works/particale/TextParticale/demo.js" afterPath="$PROJECT_DIR$/works/particale/TextParticale/demo.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/works/particale/TextParticale/demo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="29">
-              <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+              <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -33,15 +34,15 @@
       <file leaf-file-name="demo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/works/particale/TextParticale/demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            <state relative-caret-position="319">
+              <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
               <folding>
                 <element signature="e#60#186#0" expanded="false" />
-                <element signature="e#4297#4749#0" expanded="false" />
-                <element signature="e#4767#5144#0" expanded="false" />
-                <element signature="e#5149#5174#0" expanded="false" />
-                <element signature="e#5342#6275#0" expanded="false" />
-                <element signature="e#6310#6462#0" expanded="false" />
+                <element signature="e#4295#4747#0" expanded="false" />
+                <element signature="e#4765#5142#0" expanded="false" />
+                <element signature="e#5147#5172#0" expanded="false" />
+                <element signature="e#5340#6273#0" expanded="false" />
+                <element signature="e#6308#6460#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -218,12 +219,12 @@
       <workItem from="1532615500440" duration="5137000" />
       <workItem from="1532666188728" duration="3956000" />
       <workItem from="1532703776319" duration="3812000" />
-      <workItem from="1532920763215" duration="7042000" />
+      <workItem from="1532920763215" duration="7693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19947000" />
+    <option name="totallyTimeSpent" value="20598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -389,7 +390,7 @@
     <entry file="file://$PROJECT_DIR$/works/particale/TextParticale/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
-          <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+          <caret line="1" column="51" lean-forward="false" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -400,15 +401,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/works/particale/TextParticale/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        <state relative-caret-position="319">
+          <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
           <folding>
             <element signature="e#60#186#0" expanded="false" />
-            <element signature="e#4297#4749#0" expanded="false" />
-            <element signature="e#4767#5144#0" expanded="false" />
-            <element signature="e#5149#5174#0" expanded="false" />
-            <element signature="e#5342#6275#0" expanded="false" />
-            <element signature="e#6310#6462#0" expanded="false" />
+            <element signature="e#4295#4747#0" expanded="false" />
+            <element signature="e#4765#5142#0" expanded="false" />
+            <element signature="e#5147#5172#0" expanded="false" />
+            <element signature="e#5340#6273#0" expanded="false" />
+            <element signature="e#6308#6460#0" expanded="false" />
           </folding>
         </state>
       </provider>
