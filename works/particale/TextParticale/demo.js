@@ -42,7 +42,7 @@ window.onload = function () {
             originParticlae = createOriginParticleField_samePosition({originParticleNum:geo_ver.length,verPosition:[-100,-1000,0]});
             originParticlae.position.z = -4500;
             originParticlae.position.x = -2500;
-            originParticlae.position.y = -200;
+            originParticlae.position.y = -600;
             console.log(originParticlae);
             particleAnimate = createParticleAnimateFunction(
                 {   originParticle:originParticlae,
