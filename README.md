@@ -1,4 +1,4 @@
-# myThree<br>
+# Jonithan's Three.js<br>
 我的Three.js的作品集和函数封装<br>
 # 各目录内容<br>
 ## build<br>
