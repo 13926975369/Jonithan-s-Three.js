@@ -25,7 +25,7 @@ window.onload = function () {
                 bevelSize:8,
                 bevelSegments:5
             };
-            geometry = new THREE.TextGeometry("Quanta" ,fontOptions);
+            geometry = new THREE.TextGeometry("Jonithan" ,fontOptions);
             geo_ver = getGeoVer(geometry);
             
             //粒子代码
@@ -40,7 +40,7 @@ window.onload = function () {
             pointsFiled.position.x = -2500;
             console.log(pointsFiled);
             originParticlae = createOriginParticleField_samePosition({originParticleNum:geo_ver.length,verPosition:[-100,-1000,0]});
-            originParticlae.position.z = -4500;
+            originParticlae.position.z = -1000;
             originParticlae.position.x = -2500;
             originParticlae.position.y = -600;
             console.log(originParticlae);
@@ -59,7 +59,7 @@ window.onload = function () {
         threeConf.stats.begin();
         threeConf.renderer.clear();
         threeConf.renderer.render(threeConf.scene,threeConf.camera);
-        // threeConf.control.update();
+        threeConf.control.update();
         particleAnimate();
         threeConf.stats.end();
         requestAnimationFrame(animate);
