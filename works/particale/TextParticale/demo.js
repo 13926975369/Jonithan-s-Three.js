@@ -55,6 +55,11 @@ window.onload = function () {
             threeConf.scene.add(originParticlae);
             animate();
         });
+
+
+
+
+
     function animate() {
         threeConf.stats.begin();
         threeConf.renderer.clear();
@@ -110,9 +115,6 @@ window.onload = function () {
        let texture = new THREE.Texture(canvasDom);
        texture.needsUpdate = true;//使用贴图时进行更新
        return texture;
-
-
-
     }
 
     function createOriginParticleField_samePosition(
