@@ -5,8 +5,10 @@
     <title>Title</title>
     <link type="text/css" href="build/general.css" rel="stylesheet">
     <script src="build/three.js"></script>
-    <script src="build/OrbitControls.js"></script>
+    <script src="package/tools/OrbitControls.js"></script>
+    <script src="package/tools/stats.min.js"></script>
     <script src="wheel/init/general_three.js"></script>
+    <script src="package/tools/dat.gui.min.js"></script>
 </head>
 <body style="width: 100%;height: 100%">
 <div id="three_canvas" style="width: 100%;height: 100%"></div>
@@ -19,6 +21,7 @@
     threeConf.scene.add(cube);
     threeConf.camera.position.z = 5;
     function render() {
+        threeConf.stats.update();
         requestAnimationFrame(render);
         cube.rotation.x += 0.1;
         cube.rotation.y += 0.1;
