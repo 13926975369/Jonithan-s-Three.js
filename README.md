@@ -1,5 +1,5 @@
-# myThree<br>
-我的Three.js的作品集和函数封装<br>
+# Jonithan's Three.js<br>
+我的Three.js函数封装和作品<br>
 # 各目录内容<br>
 ## build<br>
 存放基本代码，比如基本框架，控制器，性能监视器，通用css样式<br>
