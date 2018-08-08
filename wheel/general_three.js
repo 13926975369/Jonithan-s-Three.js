@@ -15,6 +15,8 @@ function initThree({
         scene:null,
         light:null,
         control:null,
+        gui:null,
+        guiListen:null
     };
     let[width,height] = [document.getElementById(canvasID).clientWidth,document.getElementById(canvasID).clientHeight];
 
@@ -56,6 +58,17 @@ function initThree({
     threeConf.stats.domElement.style.top = "0px";
     document.getElementById(canvasID).appendChild(threeConf.stats.dom);//stats.begin() stats.end();
 
+    //GUI基础配置
+    threeConf.guiListen = new function () {
+        this.outputObjects = function () {
+            console.log(threeConf.scene.children);
+        };
+        this.numberObjects = threeConf.scene.children.length;//未做初始更新操作
+    };
+    //GUI
+    threeConf.gui = new dat.GUI();
+    threeConf.gui.add(threeConf.guiListen,'outputObjects');
+    threeConf.gui.add(threeConf.guiListen,'numberObjects').listen();
     console.log("记得写渲染函数");
     return threeConf;
 }
