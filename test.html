@@ -20,6 +20,8 @@
     var cube = new THREE.Mesh(geometry, material);
     threeConf.scene.add(cube);
     threeConf.camera.position.z = 5;
+
+
     function render() {
         threeConf.stats.update();
         requestAnimationFrame(render);

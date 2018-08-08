@@ -11,7 +11,7 @@ window.onload = function () {
     let geometry;
     let geo_ver;
     let pointsFiled, originParticlae,particleAnimate;
-
+    console.log(threeConf)
     fontLoader.load('../../../package/font/optimer_bold.typeface.json',
         function (font) {
             let fontOptions ={
