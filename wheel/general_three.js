@@ -75,12 +75,12 @@ function initThree({
 
 function setArrowHelper(mesh) {
     for(let f = 0, fl = mesh.geometry.faces.length; f < f1; f++){
-        let face = mesh.geometry.faces[f];
-        let centroid = new THREE.Vector3(0,0,0);
-        centroid.add(mesh.geometry.vertices[face.a]);
+        let face = mesh.geometry.faces[f]; //取模型的面
+        let centroid = new THREE.Vector3(0,0,0); //设置原点，后改变距离
+        centroid.add(mesh.geometry.vertices[face.a]); //取得面的点，面的a，b，c属性对应几何体点的下标
         centroid.add(mesh.geometry.vertices[face.b]);
         centroid.add(mesh.geometry.vertices[face.c]);
-        centroid.divideScalar(3);
+        centroid.divideScalar(3);//求质心
 
         let arrow = new THREE.ArrowHelper(face.normal, centroid, 2, 0x3333FF, 0.5, 0.5);
         mesh.add(arrow);
