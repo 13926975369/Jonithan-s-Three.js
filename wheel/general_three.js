@@ -72,3 +72,17 @@ function initThree({
     console.log("记得写渲染函数");
     return threeConf;
 }
+
+function setArrowHelper(mesh) {
+    for(let f = 0, fl = mesh.geometry.faces.length; f < f1; f++){
+        let face = mesh.geometry.faces[f];
+        let centroid = new THREE.Vector3(0,0,0);
+        centroid.add(mesh.geometry.vertices[face.a]);
+        centroid.add(mesh.geometry.vertices[face.b]);
+        centroid.add(mesh.geometry.vertices[face.c]);
+        centroid.divideScalar(3);
+
+        let arrow = new THREE.ArrowHelper(face.normal, centroid, 2, 0x3333FF, 0.5, 0.5);
+        mesh.add(arrow);
+    }
+}
