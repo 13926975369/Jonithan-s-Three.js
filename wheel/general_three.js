@@ -7,7 +7,8 @@ function initThree({
     cameraZ = 600,
     lightX = 100,
     lightY = 100,
-    lightZ = 100
+    lightZ = 100,
+    isLight = true
     } = {}) {
     let threeConf = {
         renderer:null,
@@ -27,7 +28,7 @@ function initThree({
     });
     threeConf.renderer.setSize(width,height);//渲染器尺寸
     document.getElementById(canvasID).appendChild(threeConf.renderer.domElement);//把渲染器送入元素中进行渲染
-    threeConf.renderer.getClearColor(0x000000,1.0);//设置颜色缓冲区颜色
+    threeConf.renderer.setClearColor(0x000000,1.0);//设置颜色缓冲区颜色
 
     //摄像头
     threeConf.camera = new THREE.PerspectiveCamera(60,width/height,cameraNear,cameraFar);
@@ -43,10 +44,13 @@ function initThree({
     threeConf.scene = new THREE.Scene();
 
     //灯光
-    threeConf.light = new THREE.DirectionalLight(0xffffff);
-    threeConf.light.position.set(lightX,lightY,lightZ);
-    threeConf.scene.add(threeConf.light);
-    threeConf.camera.add(threeConf.light);
+    if (isLight === true){
+        threeConf.light = new THREE.DirectionalLight(0xffffff);
+        threeConf.light.position.set(lightX,lightY,lightZ);
+        threeConf.scene.add(threeConf.light);
+        threeConf.camera.add(threeConf.light);
+    }
+
 
     //控制器
     threeConf.control = new THREE.OrbitControls(threeConf.camera);
@@ -58,7 +62,7 @@ function initThree({
     threeConf.stats.domElement.style.top = "0px";
     document.getElementById(canvasID).appendChild(threeConf.stats.dom);//stats.begin() stats.end();
 
-    //GUI基础配置
+    // GUI基础配置
     threeConf.guiListen = new function () {
         this.outputObjects = function () {
             console.log(threeConf.scene.children);
@@ -70,6 +74,7 @@ function initThree({
     threeConf.gui.add(threeConf.guiListen,'outputObjects');
     threeConf.gui.add(threeConf.guiListen,'numberObjects').listen();
     console.log("记得写渲染函数");
+
     return threeConf;
 }
 
