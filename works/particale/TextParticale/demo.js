@@ -94,17 +94,17 @@ window.onload = function () {
          */
 
         //红色
-        /*
+
         gradient.addColorStop(0,'rgba(255,255,255,1)');
         gradient.addColorStop(0.2,'rgba(255,182,193,1)');
         gradient.addColorStop(0.4,'rgba(64,0,0,1)');
         gradient.addColorStop(1,'rgba(0,0,0,1)');
-        */
 
-        gradient.addColorStop(0,'rgba(255,255,255,1)');
-        gradient.addColorStop(0.005,'rgba(139,69,19,1)');
-        gradient.addColorStop(0.4,'rgba(139,69,19,1)');
-        gradient.addColorStop(1,'rgba(0,0,0,1)');
+
+        // gradient.addColorStop(0,'rgba(255,255,255,1)');
+        // gradient.addColorStop(0.005,'rgba(139,69,19,1)');
+        // gradient.addColorStop(0.4,'rgba(139,69,19,1)');
+        // gradient.addColorStop(1,'rgba(0,0,0,1)');
 
         //设置ctx为渐变色
        ctx.fillStyle = gradient;
